@@ -1,0 +1,11 @@
+@import '../../../variables.scss';
+
+.messages-items {
+	background-color: $gray_VL;
+	border-left: 1px solid $gray_Line;
+	border-bottom: 1px solid $gray_Line;
+	height: 100%;
+	padding: 20px 40px;
+	height: calc(100vh - 81px - 180px);
+	overflow-y: auto;
+}

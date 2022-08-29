@@ -1,0 +1,38 @@
+@import '../../../variables.scss';
+
+.dialogs-search {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	background-color: $gray_L;
+	padding: 0 40px;
+	border-bottom: 1px solid $gray_Line;
+	position: relative;
+	.search-input {
+		border-radius: 25px;
+		height: 40px;
+		border: 1px solid $gray_Line;
+		width: 100%;
+		padding-left: 45px;
+		font-size: 13px;
+		&:focus {
+			outline: none;
+			border: 1px solid $blue_D;
+		}
+	}
+	button {
+		cursor: pointer;
+		border: none;
+		width: 42px;
+		height: 42px;
+		opacity: 0.7;
+		background: none;
+		background-size: 15px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url('../../../img/icon/search.svg');
+		position: absolute;
+		left: 40px;
+		top: 18px;
+	}
+}

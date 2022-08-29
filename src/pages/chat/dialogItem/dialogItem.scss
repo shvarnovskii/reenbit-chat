@@ -1,0 +1,60 @@
+@import '../../../variables.scss';
+
+.dialog-item {
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $white;
+	border-bottom: 1px solid $gray_Line;
+	cursor: pointer;
+
+	.author-avatar {
+		position: relative;
+		img {
+			border-radius: 50px;
+			width: 45px;
+			height: 45px;
+		}
+		.author-online {
+			height: 11px;
+			width: 11px;
+			background-color: $green;
+			border-radius: 50%;
+			display: inline-block;
+			margin-top: 0px;
+			position: absolute;
+			bottom: 5px;
+			right: 0px;
+		}
+	}
+
+	.last-message-info {
+		margin-right: auto;
+		margin-left: 15px;
+		h5 {
+			font-size: 16px;
+			font-weight: 400;
+		}
+		.message {
+			font-size: 14px;
+			opacity: 0.6;
+			font-weight: 400;
+		}
+	}
+	.date {
+		min-width: 90px;
+		font-size: 13px;
+		font-weight: 400;
+		opacity: 0.8;
+		align-self: flex-start;
+		text-align: right;
+	}
+	&:hover {
+		background-color: $gray_L;
+	}
+}
+
+.active {
+	background-color: $gray_L;
+}

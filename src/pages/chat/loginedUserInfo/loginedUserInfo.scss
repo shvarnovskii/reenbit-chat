@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.logined-user-info {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	background-color: $gray_L;
+	padding: 0 40px;
+	position: relative;
+	img {
+		border-radius: 50px;
+		width: 45px;
+		height: 45px;
+		margin-right: 18px;
+	}
+	.author-online {
+		height: 11px;
+		width: 11px;
+		background-color: $green;
+		border-radius: 50%;
+		display: inline-block;
+		position: absolute;
+		bottom: 18px;
+		left: 74px;
+	}
+	h5 {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}

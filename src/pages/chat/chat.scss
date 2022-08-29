@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+.content-area {
+	display: flex;
+	justify-content: space-between;
+	.dialogs-area {
+		width: 25%;
+	}
+	.messages-area {
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+	}
+}

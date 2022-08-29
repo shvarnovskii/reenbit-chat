@@ -1,0 +1,23 @@
+@import '../../../variables.scss';
+
+.dialogs-items {
+	background-color: $white;
+	h2 {
+		height: 92px;
+		display: flex;
+		align-items: center;
+		padding-left: 40px;
+		color: $blue_L;
+		font-weight: 400;
+	}
+	.nothing-found {
+		padding-left: 40px;
+		font-weight: 400;
+		font-size: 15px;
+		opacity: 0.6;
+	}
+	ul {
+		height: calc(100vh - 80px - 81px - 92px);
+		overflow-y: auto;
+	}
+}
