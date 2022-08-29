@@ -14,7 +14,9 @@ const DialogItem = ({ dataDialog, getActiveChatId, activeClass }) => {
 			</div>
 			<div className="last-message-info">
 				<h5>{fullname}</h5>
-				<p className="message">{message}</p>
+				<p className="message">
+					{message?.length > 65 ? message.slice(0, 65) + '...' : message}
+				</p>
 			</div>
 			<p className="date">{created ? timeAgo.format(+created) : null}</p>
 		</li>

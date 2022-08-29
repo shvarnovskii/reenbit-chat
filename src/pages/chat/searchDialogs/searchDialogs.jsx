@@ -10,7 +10,7 @@ const SearchDialogs = ({ getSearchTerm }) => {
 
 	return (
 		<>
-			<form className="dialogs-search">
+			<form className="dialogs-search" onSubmit={(e) => e.preventDefault()}>
 				<input
 					onChange={(e) => setSearchTerm(e.target.value)}
 					type="text"
